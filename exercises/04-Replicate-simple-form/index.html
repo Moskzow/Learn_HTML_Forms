@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+	</head>
+	<body>
+		<form method="post" action="/my_form_html">
+			<table border="1">
+				<tr bgcolor="#CCCCFF">
+					<th>Name</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" name="name" size="25" />
+					</td>
+				</tr>
+				<tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" name="sex" value="male" /> Male <br />
+						<input type="radio" name="sex" value="female" checked /> Female
+					</td>
+				</tr>
+				<tr>
+					<td>Eye color</td>
+					<td>
+						<select name="eye color">
+							<option>blue</option>
+							<option>brown</option>
+							<option selected>green</option>
+							<option>other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Check all that apply</td>
+					<td>
+						<input type="checkbox" name="height" value="1" /> Over 6 feet tall <br />
+						<input type="checkbox" name="weight" value="1" /> Over 200 pounds
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						Describe your athletic ability:<br />
+						<textarea name="athletic" cols="50" rows="4"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="Enter my information" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
